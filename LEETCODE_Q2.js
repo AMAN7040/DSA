@@ -1,4 +1,4 @@
-// CHECK WHEATHER PALINDROME OR NOT
+// CHECK WHEATHER NUMBER PALINDROME OR NOT
 // Given an integer x, return true if x is a palindrome and false otherwise.
 // example => number 1221, if reversed is still 12221 so it is a palindrome.
 
