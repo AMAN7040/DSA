@@ -1,6 +1,6 @@
 // CHECK WHEATHER PALINDROME OR NOT
 // Given an integer x, return true if x is a palindrome and false otherwise.
-// example => number 1221, if reversed is still 12221 so it is a palindrome
+// example => number 1221, if reversed is still 12221 so it is a palindrome.
 
 const palindrome = (num) => {
   let reverseNum = 0;
