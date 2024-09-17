@@ -24,8 +24,8 @@ const merge = (arr, low, mid, high) => {
     right++;
   }
 
-  for (i = low; i <= high; i++) {
-    arr[i] = temp[i - low];
+  for (i = 0; i < temp.length; i++) {
+    arr[low + i] = temp[i];
   }
 };
 
