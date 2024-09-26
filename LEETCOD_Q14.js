@@ -21,18 +21,16 @@
 
 //APPROACH - 2 BY using XOR operation
 
-// const misingNum = (n) => {
-//     let xorArray = 0; xorNum = 0
+const misingNum = (n) => {
+    let xorArray = 0; xorNum = 0
 
-//     n.forEach((num)=>{
-//         xorArray ^= num;
-//     })
-
-//     for(let i =0; i<=n.length ; i++){
-//         xorNum ^= i
-//     }
-//     return xorArray ^ xorNum;
-// }
+    for(let i =0; i<n.length ; i++){
+        xorNum ^= i+1
+        xorArray ^= n[i]
+    }
+    xorArray ^= n.length
+    return xorArray ^ xorNum;
+}
 
 // const misingNum = (arr, n) => {
 //     for(let i=1; i<=n;i++){
@@ -48,18 +46,18 @@
 
 // }
 
-const misingNum = (arr,n) => {
-    const hash = new Array(n+1).fill(0);
+// const misingNum = (arr,n) => {
+//     const hash = new Array(n+1).fill(0);
     
-    for(let i=0; i<n-1; i++){
-        hash[arr[i]] = 1;
-    }
-    for(let i =1; i<=n; i++){
-        if(hash[i]===0) return i
-    }
-}
+//     for(let i=0; i<n-1; i++){
+//         hash[arr[i]] = 1;
+//     }
+//     for(let i =1; i<=n; i++){
+//         if(hash[i]===0) return i
+//     }
+// }
 
-const arr = [1,2,3,4];
+const arr = [1,2,3,5];
 const n = 5;
 console.log(misingNum(arr,n));
 
