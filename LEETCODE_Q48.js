@@ -12,7 +12,7 @@ const subSum = (nums,k) => {
 
     if(hash.has(rem)){
         count += hash.get(rem);
-    }
+    }  
 
     hash.set(sum, (hash.get(sum) || 0) +1)
   }
